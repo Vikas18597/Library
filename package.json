@@ -1,0 +1,27 @@
+{
+  "name": "library",
+  "version": "1.0.0",
+  "description": "ODIN PROJECT -- Assignment",
+  "main": "lib.js",
+  "scripts": {
+    "lint":"eslint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vikas18597/Library.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vikas18597/Library/issues"
+  },
+  "homepage": "https://github.com/Vikas18597/Library#readme",
+  "devDependencies": {
+    "eslint": "^8.35.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.6.1",
+    "eslint-plugin-promise": "^6.1.1"
+  }
+}
