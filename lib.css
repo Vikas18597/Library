@@ -4,6 +4,33 @@ div{
     text-align: center;
 }
 
+.form-popup{
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+form{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    border: solid;
+
+}
+
+.Enter{
+    width: 100px;
+    margin-left: 37%;
+    margin-top: 40px;
+}
+label{
+   
+}
+input{
+    width: 200px;
+    margin-left: 23%;
+    text-align: center;
+}
+
 button{
     padding: 10px;
 }

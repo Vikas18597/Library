@@ -20,6 +20,7 @@ addBookToLibrary(book2)
 const book3 = new Book('Viwas', 'Medium Brain', '700', 'No')
 addBookToLibrary(book3)
 
+// creating table based on book length
 for (let i = 0; i < myLibrary.length + 1; i++) {
   const heading = document.createElement('tr')
   heading.setAttribute('id', 'row-' + i)
@@ -45,3 +46,12 @@ for (let i = 0; i < myLibrary.length; i++) {
     element.appendChild(cell)
   }
 }
+
+// adding a function for pop up box with details for entires of books
+function details () {
+  const person = prompt('Please enter author name')
+  const title = prompt('Please enter title')
+}
+
+const popUp = document.querySelector('.open-button')
+popUp.addEventListener('click', details)

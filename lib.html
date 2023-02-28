@@ -5,8 +5,26 @@
     </title>
     <link rel="stylesheet" href="lib.css">
     <body>
+        <div class="form-popup" id="myForm">
+            <form class="form-container">
+                <label for="Author">Author</label>
+                <input type="text" placeholder="Enter Name" id = "Name-author" required>
+                <br>    
+                <label for="Title">Title</label>
+                <input type="text" placeholder="Enter Title" id = "Book-title" required>
+                <br>    
+                <label for="Pages">Pages</label>
+                <input type="text" placeholder="Number of Pages" id = "Book-pages" required>                <br>    
+                <br>
+                <label for="ReadFlag">readFlag</label> 
+                <input type="text" placeholder="readFlag" id = "Book-readFlag" required>
+
+                <button type="submit" class="Enter">Enter</button>
+                
+            </form>
+        </div>
         <div>
-            <button>
+            <button class = 'open-button'>
                 Enter New Values
             </button>
         </div>
