@@ -5,25 +5,45 @@
     </title>
     <link rel="stylesheet" href="lib.css">
     <body>
+
         <div class="form-popup" id="myForm">
-            <form class="form-container">
+            <form action="#" class="form-container">
                 <label for="Author">Author</label>
-                <input type="text" placeholder="Enter Name" id = "Name-author" required>
+                <input class="input-info" type="text" placeholder="Enter Name" id = "Name-author">
+                <span id = 'empty-author'>Value can't be empty</span>
                 <br>    
                 <label for="Title">Title</label>
-                <input type="text" placeholder="Enter Title" id = "Book-title" required>
+                <input class="input-info" type="text" placeholder="Enter Title" id = "Book-title">
+                <span id = 'empty-title'>Value can't be empty</span>
                 <br>    
                 <label for="Pages">Pages</label>
-                <input type="text" placeholder="Number of Pages" id = "Book-pages" required>                <br>    
-                
-                <label for="ReadFlag">readFlag</label> 
-                <input type="text" placeholder="readFlag" id = "Book-readFlag" required>
-
+                <input class="input-info" type="number" placeholder="Number of Pages" id = "Book-pages">     
+                <span id = 'empty-page'>Value can't be empty</span>
+                <br>
+                <div class = 'flag'>
+                    <div>
+                        Read Flag
+                    </div>
+                    <div class = 'flag-options'>
+                        <div>
+                            <input type="radio" id="yes" name="Book-readFlag" value="HTML">
+                        </div>
+                        <div>
+                            <label for="yes" id = 'yes-label'>Yes</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="no" name="Book-readFlag" value="HTML">
+                        </div>
+                        <div>
+                            <label for="no" id = 'no-label'>No</label>
+                        </div>
+                    </div>
+                </div>
+                <span id = 'empty-flag'>Value can't be empty</span>
                 <button type="submit" class="Enter">Enter</button>
-                
+
             </form>
         </div>
-        
         <div>
             <button class = 'open-button'>
                 Enter New Values
@@ -33,7 +53,6 @@
             <table id = 'table'>
             </table>    
         </div>
-        
 
         <script src = 'lib.js'>    
         </script>
