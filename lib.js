@@ -48,10 +48,13 @@ for (let i = 0; i < myLibrary.length; i++) {
 }
 
 // adding a function for pop up box with details for entires of books
-function details () {
-  const person = prompt('Please enter author name')
-  const title = prompt('Please enter title')
-}
 
 const popUp = document.querySelector('.open-button')
-popUp.addEventListener('click', details)
+popUp.addEventListener('click', function () {
+  document.getElementById('myForm').style.display = 'block'
+})
+
+const popOut = document.querySelector('.Enter')
+popOut.addEventListener('click', function () {
+  document.getElementById('myForm').style.display = 'none'
+})
