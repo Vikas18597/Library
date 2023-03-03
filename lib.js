@@ -108,7 +108,7 @@ popOut.addEventListener('click', (e) => {
     }
     if (!readFlag[0].checked || !readFlag[1].checked) {
       document.getElementById('empty-flag').style.display = 'block'
-    } else {
+    } else if (readFlag[0].checked || readFlag[1].checked) {
       document.getElementById('empty-flag').style.display = 'none'
     }
   }

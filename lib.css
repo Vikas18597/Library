@@ -1,13 +1,22 @@
 div{
-    margin-bottom: 20px;
+    
     align-items: center;
     text-align: center;
 }
+.table-div{
+    position: relative;
+    
+}
 
 .form-popup{
-    margin-left: 25%;
-    margin-right: 25%;
+    top : 25%;
+    right : 25%;
+    left: 25%;
+    bottom: 25%;
     display: none;
+    position: fixed ;
+    z-index : 1000;
+    background-color: white;
 }
 
 form{
@@ -59,6 +68,7 @@ span{
     margin-top: 20px;
 }
 
+
 label{
     margin-bottom: 5px ;
 }
@@ -74,7 +84,9 @@ input, input:focus{
     outline: none ; /*This is done to remove border when filling values in box*/ 
 }
 
-
+.open-button{
+    margin-bottom: 20px;
+}
 button{
     padding: 10px;
 }
