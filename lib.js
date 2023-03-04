@@ -24,6 +24,7 @@ function Printdata () {
   // deleting the section
   const temp = document.getElementById('table')
   temp.innerHTML = ''
+
   // creating table based on book length
   for (let i = 0; i < myLibrary.length + 1; i++) {
     const heading = document.createElement('tr')
@@ -32,9 +33,9 @@ function Printdata () {
     element.appendChild(heading)
   }
 
-  for (const keys in book1) {
+  for (let i = 0; i < Object.keys(book1).length; i++) {
     const heading = document.createElement('th')
-    const text = document.createTextNode(keys)
+    const text = document.createTextNode(Object.keys(book1)[i])
     heading.appendChild(text)
     const element = document.getElementById('row-0')
     element.appendChild(heading)
@@ -49,6 +50,17 @@ function Printdata () {
       const element = document.getElementById('row-' + (i + 1))
       element.appendChild(cell)
     }
+  }
+  for (let i = 1; i < myLibrary.length + 1; i++) {
+    const temp = document.createElement('div')
+    temp.setAttribute('id', 'del-butt-div')
+    const cell = document.createElement('button')
+    cell.setAttribute('id', 'del-butt')
+    const text = document.createTextNode('del')
+    cell.appendChild(text)
+    const element = document.getElementById('row-' + i)
+    element.appendChild(temp)
+    temp.appendChild(cell)
   }
 }
 
@@ -72,7 +84,7 @@ popOut.addEventListener('click', (e) => {
   const newPages = document.getElementById('Book-pages').value
 
   const readFlag = document.getElementsByName('Book-readFlag')
-  console.log(!newPages)
+
   // for checking if there are non empty values
   if (newAuthor && newTitle && newPages) {
     if (readFlag[0].checked) {
@@ -106,7 +118,7 @@ popOut.addEventListener('click', (e) => {
     } else if (newPages) {
       document.getElementById('empty-page').style.display = 'none'
     }
-    if (!readFlag[0].checked || !readFlag[1].checked) {
+    if (!readFlag[0].checked && !readFlag[1].checked) {
       document.getElementById('empty-flag').style.display = 'block'
     } else if (readFlag[0].checked || readFlag[1].checked) {
       document.getElementById('empty-flag').style.display = 'none'

@@ -1,11 +1,5 @@
 div{
-    
-    align-items: center;
     text-align: center;
-}
-.table-div{
-    position: relative;
-    
 }
 
 .form-popup{
@@ -79,7 +73,9 @@ input, input:focus{
     font-size: 10px;
     text-align: center;
     border-radius: 6px;
-    border:none ;
+    border: solid;
+    border-color: white;
+    border-width: 1px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2) ;
     outline: none ; /*This is done to remove border when filling values in box*/ 
 }
@@ -92,12 +88,16 @@ button{
 }
 
 table{
-    width: 100%;
-    border: solid;
+    width: 110%;
+    border: none;
     border-width: 1px;
     text-align: center;
 }
 td, th{
     border: solid;
     border-width: 1px;
+}
+
+#del-butt-div{
+    width: 20%;
 }
