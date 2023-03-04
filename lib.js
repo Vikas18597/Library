@@ -125,3 +125,15 @@ popOut.addEventListener('click', (e) => {
     }
   }
 })
+
+// adding event listener to delete row when ordered
+const buttons = document.querySelector('.table-div')
+
+const del = (x) => {
+  if (x.target.tagName === 'BUTTON') {
+    const currentVal = x.target.parentElement.parentElement
+    currentVal.remove()
+  }
+}
+
+buttons.addEventListener('click', del)
